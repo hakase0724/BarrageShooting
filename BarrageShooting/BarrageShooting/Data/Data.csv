@@ -1,0 +1,15 @@
+Name,StartPosX,StartPosY,StartPosZ,HP,Tag,Wave
+Player,0,-0.5,0,5,Player,1
+Boss,0,2,0,1000,Boss,3
+Normal1,1,1,0,1,Red,1
+Normal2,-1,1,0,1,Blue,1
+Normal3,0,1,0,1,Green,1
+Normal4,1,1,0,1,Red,2
+Normal5,-1,1,0,1,Green,2
+Normal6,0,1,0,1,Blue,2
+Normal1,0.5,0.5,0,1,Red,1
+Normal2,-0.5,0.5,0,1,Blue,1
+Normal3,0,0,0,1,Green,1
+Normal1,0.5,0.5,0,1,Red,2
+Normal2,-0.5,0.5,0,1,Blue,2
+Normal3,0,0,0,1,Green,2

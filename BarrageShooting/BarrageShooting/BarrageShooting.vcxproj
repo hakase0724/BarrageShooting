@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E821CB41-44A5-4C1F-BC71-C45511C41F39}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BarrageShooting</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\hakas\source\repos\BarrageShooting\BarrageShooting\AddFiles;C:\Users\hakas\source\repos\BarrageShooting\BarrageShooting\AddFiles\DDSTextureLoader;C:\Users\hakas\source\repos\BarrageShooting\BarrageShooting\AddFiles\WICTextureLoader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\hakas\source\repos\BarrageShooting\BarrageShooting\AddFiles\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\hakas\source\repos\BarrageShooting\BarrageShooting\AddFiles;C:\Users\hakas\source\repos\BarrageShooting\BarrageShooting\AddFiles\DDSTextureLoader;C:\Users\hakas\source\repos\BarrageShooting\BarrageShooting\AddFiles\WICTextureLoader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\hakas\source\repos\BarrageShooting\BarrageShooting\AddFiles\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AlignedAllocationPolicy.h" />
+    <ClInclude Include="AllDirectionRotation.h" />
+    <ClInclude Include="AllDirectionSync.h" />
+    <ClInclude Include="BackGround.h" />
+    <ClInclude Include="BarrageBase.h" />
+    <ClInclude Include="BarrageManager.h" />
+    <ClInclude Include="BarrageShooting.h" />
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="BombPool.h" />
+    <ClInclude Include="BossEnemy.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletPool.h" />
+    <ClInclude Include="Collider2D.h" />
+    <ClInclude Include="Colliders.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="CommonValues.h" />
+    <ClInclude Include="CSVLoader.h" />
+    <ClInclude Include="dinputex.h" />
+    <ClInclude Include="DirLoder.h" />
+    <ClInclude Include="DXAnimation.h" />
+    <ClInclude Include="DXCamera.h" />
+    <ClInclude Include="DXCube.h" />
+    <ClInclude Include="DXExcuter.h" />
+    <ClInclude Include="DXFactory.h" />
+    <ClInclude Include="DXGameManager.h" />
+    <ClInclude Include="DXGameObject.h" />
+    <ClInclude Include="DXInput.h" />
+    <ClInclude Include="DXManager.h" />
+    <ClInclude Include="DXRenderDataPool.h" />
+    <ClInclude Include="DXRenderManager.h" />
+    <ClInclude Include="DXResourceManager.h" />
+    <ClInclude Include="DXSound.h" />
+    <ClInclude Include="DXText.h" />
+    <ClInclude Include="DXTexture.h" />
+    <ClInclude Include="EnemyBase.h" />
+    <ClInclude Include="ExplosionEffect.h" />
+    <ClInclude Include="ExplosionEffectPool.h" />
+    <ClInclude Include="FiveWaySpreadBarrage.h" />
+    <ClInclude Include="FPSCountor.h" />
+    <ClInclude Include="FuctionCountTimer.h" />
+    <ClInclude Include="HPGauge.h" />
+    <ClInclude Include="IComponent.h" />
+    <ClInclude Include="InitPrimitiveDataType.h" />
+    <ClInclude Include="ItemMover.h" />
+    <ClInclude Include="MeshAndShader.h" />
+    <ClInclude Include="MeshFactory.h" />
+    <ClInclude Include="MeshInfo.h" />
+    <ClInclude Include="MeshRenderer.h" />
+    <ClInclude Include="Mover.h" />
+    <ClInclude Include="MyEnums.h" />
+    <ClInclude Include="MyStructs.h" />
+    <ClInclude Include="NormalEnemy.h" />
+    <ClInclude Include="OptionUnit.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayScene.h" />
+    <ClInclude Include="PowerUpItem.h" />
+    <ClInclude Include="PowerUpItemPool.h" />
+    <ClInclude Include="Primitive2D.h" />
+    <ClInclude Include="ReactiveProperty.h" />
+    <ClInclude Include="ResoucePath.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResultScene.h" />
+    <ClInclude Include="ReturnCoroutineValues.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="ScoreItem.h" />
+    <ClInclude Include="ScoreItemPool.h" />
+    <ClInclude Include="ShaderFactory.h" />
+    <ClInclude Include="ShaderInfo.h" />
+    <ClInclude Include="SixWayRazerBarrage.h" />
+    <ClInclude Include="SquareCollider2D.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Subject.h" />
+    <ClInclude Include="TargetPlayerBarrage.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextRenderer.h" />
+    <ClInclude Include="TextureMesh.h" />
+    <ClInclude Include="TextureRenderer.h" />
+    <ClInclude Include="TextureShader.h" />
+    <ClInclude Include="TitleScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AllDirectionRotation.cpp" />
+    <ClCompile Include="AllDirectionSync.cpp" />
+    <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="BarrageBase.cpp" />
+    <ClCompile Include="BarrageManager.cpp" />
+    <ClCompile Include="BarrageShooting.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="BombPool.cpp" />
+    <ClCompile Include="BossEnemy.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletPool.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="CommonValues.cpp" />
+    <ClCompile Include="CSVLoader.cpp" />
+    <ClCompile Include="DirLoder.cpp" />
+    <ClCompile Include="DXAnimation.cpp" />
+    <ClCompile Include="DXCamera.cpp" />
+    <ClCompile Include="DXExcuter.cpp" />
+    <ClCompile Include="DXFactory.cpp" />
+    <ClCompile Include="DXGameManager.cpp" />
+    <ClCompile Include="DXGameObject.cpp" />
+    <ClCompile Include="DXInput.cpp" />
+    <ClCompile Include="DXManager.cpp" />
+    <ClCompile Include="DXRenderDataPool.cpp" />
+    <ClCompile Include="DXRenderManager.cpp" />
+    <ClCompile Include="DXResourceManager.cpp" />
+    <ClCompile Include="DXSound.cpp" />
+    <ClCompile Include="DXText.cpp" />
+    <ClCompile Include="DXTexture.cpp" />
+    <ClCompile Include="EnemyBase.cpp" />
+    <ClCompile Include="ExplosionEffect.cpp" />
+    <ClCompile Include="ExplosionEffectPool.cpp" />
+    <ClCompile Include="FiveWaySpreadBarrage.cpp" />
+    <ClCompile Include="FPSCountor.cpp" />
+    <ClCompile Include="FuctionCountTimer.cpp" />
+    <ClCompile Include="HPGauge.cpp" />
+    <ClCompile Include="InitPrimitiveDataType.cpp" />
+    <ClCompile Include="ItemMover.cpp" />
+    <ClCompile Include="MeshFactory.cpp" />
+    <ClCompile Include="MeshRenderer.cpp" />
+    <ClCompile Include="Mover.cpp" />
+    <ClCompile Include="NormalEnemy.cpp" />
+    <ClCompile Include="OptionUnit.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayScene.cpp" />
+    <ClCompile Include="PowerUpItem.cpp" />
+    <ClCompile Include="PowerUpItemPool.cpp" />
+    <ClCompile Include="ResultScene.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="ScoreItem.cpp" />
+    <ClCompile Include="ScoreItemPool.cpp" />
+    <ClCompile Include="ShaderFactory.cpp" />
+    <ClCompile Include="SixWayRazerBarrage.cpp" />
+    <ClCompile Include="SquareCollider2D.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TargetPlayerBarrage.cpp" />
+    <ClCompile Include="TextRenderer.cpp" />
+    <ClCompile Include="TextureMesh.cpp" />
+    <ClCompile Include="TextureRenderer.cpp" />
+    <ClCompile Include="TextureShader.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BarrageShooting.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="BarrageShooting.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\TextureShader.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

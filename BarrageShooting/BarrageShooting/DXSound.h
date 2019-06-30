@@ -1,0 +1,28 @@
+#pragma once
+#include <mmsystem.h>
+#include <dsound.h>
+#include <windows.h>
+#include <tchar.h>
+namespace MyDirectX
+{
+	class DXSound
+	{
+	public:
+		DXSound(HWND hwnd);
+		DXSound(HWND hwnd, LPWSTR sourcePath);
+		~DXSound() {};
+		//âπó ê›íË
+		void SetVolume(LONG volume) { mDsBuffer->SetVolume(volume); }
+		//âπÇç≈èâÇ©ÇÁçƒê∂Ç≈Ç´ÇÈÇÊÇ§Ç…Ç∑ÇÈ
+		void ResetSound();
+		void Play(bool isLoop = true);
+		void Stop();
+	private:
+		IDirectSound8* mDirectSound = nullptr;
+		IDirectSoundBuffer8* mDsBuffer = nullptr;
+		bool OpenWave(TCHAR *filepath, WAVEFORMATEX &waveFormatEx, char** ppData, DWORD &dataSize);
+	};
+
+}
+
+
